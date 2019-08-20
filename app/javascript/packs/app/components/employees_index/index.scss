@@ -1,0 +1,101 @@
+@import "app/assets/stylesheets/vars.scss";
+
+.employees-index {
+  .filter-region {
+    .filter-types {
+      padding-left: 0;
+    }
+    .employees-filter {
+      display: inline-flex;
+      margin-right: 5px;
+      margin-top: 0;
+      margin-bottom: 0px;
+      span {
+        width: 155px;
+        font-size: 15px;
+        padding-top: 5px;
+      }
+      .not-choosen {
+        cursor: pointer;
+        &:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  .fa {
+    padding-top: 3px;
+  }
+  .result-region {
+    padding: 10px;
+    border: solid 1px #dedede;
+    border-radius: 5px;
+    margin-top: 10px;
+    .salary{
+      width: 97px;
+    }
+    .dob {
+      width: 105px;
+    }
+    .level {
+      width: 64px;
+    }
+    .actions {
+      width: 66px;
+    }
+    tr{
+      &.fresher td:not(.actions){
+        color: dimgrey;
+      }
+      &.junior td:not(.actions){
+        color: $blue-light;
+      }
+      &.senior td:not(.actions){
+        color: orange;
+      }
+    }
+    td {
+      vertical-align: middle;
+    }
+    .actions {
+      cursor: pointer;
+      .fa {
+        padding-right: 10px;
+        &:hover {
+          color: $blue-light;
+        }
+      }
+      a {
+        color: darkslategrey;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .employees-index .filter-region h4.employees-filter{
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .filter-icon {
+    margin-right: -45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .employees-index .filter-region .filter-types h4.employees-filter span{
+      margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .employees-index .filter-region h4.employees-filter{
+    span {
+      width: 125px;
+      font-size: 12px;
+    }
+  }
+}

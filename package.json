@@ -1,0 +1,25 @@
+{
+  "name": "reactjs_redux_on_rails_sample_code",
+  "version": "1.0.0",
+  "description": "Sample Code for ReactJs Redux Rails",
+  "author": "nus",
+  "license": "ISC",
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=6.11.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

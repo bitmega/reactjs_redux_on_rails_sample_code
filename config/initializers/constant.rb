@@ -1,0 +1,2 @@
+DATE_FORMAT = "%b %d, %Y"
+AGE_MUST_GREATER_THAN = 18

@@ -1,0 +1,14 @@
+.header
+  .navbar.navbar-default
+    .container
+      .navbar-header
+        button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#left-menu" aria-expanded="false"
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to root_path, class: "navbar-brand" do
+          = image_tag "logo.png"
+      .collapse.navbar-collapse
+        .navbar-left
+          strong = t("common.title")
+        .navbar-right

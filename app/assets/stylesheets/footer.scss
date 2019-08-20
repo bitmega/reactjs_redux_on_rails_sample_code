@@ -1,0 +1,15 @@
+@import 'vars';
+
+footer {
+  height: $footer-height;
+  background-color: white;
+  border-top: solid 1px lightgrey;
+
+  .footer {
+    display: table;
+    padding-top: 26px;
+  }
+  span {
+    color: #E7512F
+  }
+}

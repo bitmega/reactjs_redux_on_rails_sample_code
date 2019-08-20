@@ -1,0 +1,19 @@
+@import 'vars';
+
+.header {
+  position: relative;
+  z-index: 10;
+  margin-bottom: $header-margin-bottom;
+  .navbar {
+    background-color: orange;
+    min-height: $header-height;
+  }
+  .navbar-brand {
+    color: darkslategrey;
+  }
+  .navbar-left {
+    margin-top: 29px;
+    color: darkslategrey;
+    font-size: 17px;
+  }
+}

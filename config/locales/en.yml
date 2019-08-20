@@ -1,0 +1,91 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  common:
+    title: React on Rails Sample Code
+    footer: "© <span>NUS Technology</span>  2017. All rights reserved."
+    submit: Submit
+    save: Save
+    ok: OK
+    cancel: Cancel
+    confirm_title: Confirmation Box
+    yes_t: "Yes"
+    no_t: "No"
+    about_us_title: The standard Lorem Ipsum passage, used since the 1500s
+    about_us: |
+        <strong>NUS Technology</strong> offers leading edge web and mobile software development services, as well as project management and product management. We proudly serve a diverse group of clients across the globe, from small businesses to large corporations.
+        <br/><br/>
+        Here at NUS, we live by the motto “<span class="orange">Now You're Satisfied</span>” because customer's satisfaction is our highest priority. We approach every challenge with passion and creativity, delivering excellent results in less time. We take the hassle and frustration out of client's development projects, allowing them to focus on business.
+        <br/><br/>
+        We take a strategic approach to managing our clients’ projects and employ various management methodologies, such as Agile, PMBOK, and CMMI, based on clients’ needs.
+        <br/><br/>
+        We employ a team of talented, passionate and skilled professionals who live and breathe NUS. Our Employee works hard and plays hard, carrying out our commitment to excellence in every project.
+        <br/><br/>
+        We value our Employee and strive to provide a dynamic work environment, where team members can excel, develop new skills and advance their careers. Our motto, “Now You're Satisfied” is reflected in how we treat our Employee, as we aim to create an atmosphere where our employees are content, fulfilled and valued.
+        <br/><br/>
+        We offer training, coaching, tools and infrastructure to help our team members reach their personal and professional goals.
+  employees:
+    must_greater_than_18: must be greater than or equal to 18
+    levels:
+      fresher: Fresher
+      junior: Junior
+      senior: Senior
+    index:
+      title: Employees Management
+      name: Name
+      salary: Salary (USD)
+      dob: DOB
+      level: Level
+      actions: Actions
+      del_employee_desc: Are you sure you want to remove Employee <strong class='break-word'>%{name}</strong> ?
+    form:
+      name: Name
+      salary: Salary
+      salary_placeholder: Salary (USD)
+      dob: DOB
+      level: Level
+    new:
+      title: Add New Employee
+    edit:
+      title: Edit Employee
+    filter:
+      SHOW_ALL: All Employees
+      GREATER_THAN_1000_USD: Salary > 1000 USD
+      LESS_THAN_OR_EQUAL_1000_USD: Salary <= 1000 USD
+  messages:
+    common_error: Server is busy now. Try again later
+    employee_created: New Employee added
+    employee_updated: Employee updated
+    employee_deleted: Employee removed
+  layout:
+    home: Home
+    about_us: About Us
+    edit_employee: Edit Employee
+    links: LINKS
+    tech_stacks: TECH STACKS
+    ruby_on_rails: Ruby on Rails
+    react: React
+    redux: Redux
+    nodejs: NodeJS
+    react-router: React Router
+    additonal: ADDITIONAL LIBRARIES / GEMS
+    dependencies: Dependencies

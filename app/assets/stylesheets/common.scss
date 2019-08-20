@@ -1,0 +1,101 @@
+@import 'vars';
+
+html {
+  min-height: 780px;
+}
+
+body {
+  color: darkslategrey;
+  font-family: 'Roboto', sans-serif;;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: darkorange;
+}
+
+.control-label {
+  color: grey;
+  span{
+    color: red;
+    font-weight: normal;
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 400px;
+  }
+}
+
+.modal {
+  .modal-title{
+    font-weight: bold;
+    color: grey;
+  }
+
+  .modal-body {
+    color: grey;
+    padding: 25px;
+    strong {
+      color: black;
+    }
+  }
+
+  .modal-footer{
+    button {
+      min-width: 80px;
+    }
+  }
+}
+
+label.error {
+  color: red;
+  margin-top: 3px;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.select2 {
+  width: 100% !important;
+  .select2-selection--single {
+    height: 34px;
+    span {
+      margin-top: 2px;
+    }
+  }
+}
+
+.break-word {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.orange {
+  color: orange;
+}
+
+.navbar-toggle {
+  background-color: white;
+  margin-top: 22px;
+}
+
+.min-fullheight {
+  min-height: 100% !important;
+}
+
+.fullheight {
+  height: 100% !important;
+}
+
+.main-yield {
+  position: relative;
+  margin-top: $header-height-margin-negative;
+  padding-top: $header-height-margin;
+  margin-bottom: $footer-min-height-negative;
+  padding-bottom: $footer-height;
+}

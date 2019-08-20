@@ -1,0 +1,69 @@
+#left-menu{
+  min-height: 100% !important;
+  width: 16.66666667%;
+}
+
+.left-menu {
+  border-right: solid 1px lightgrey;
+  padding-bottom: 5% !important;
+  padding-right: 15px;
+  [class*=level-] {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .level-1 {
+    padding-top: 35px;
+    border-bottom: solid 1px lightgrey;
+    font-size: 14px;
+    color: lightslategrey;
+    &:first-child{
+      padding-top: 20px;
+    }
+  }
+  .level-2{
+    color: darkslategrey;
+    padding-top: 15px;
+    a {
+      color: darkslategrey;
+      text-decoration: none !important;
+      &:hover{
+        color: orange;
+      }
+      i {
+        float: right;
+      }
+    }
+
+  }
+  .level-3 {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .choosen {
+    color: orange !important;
+  }
+}
+.right-menu {
+  padding-top: 8px;
+  border-left: solid 1px lightgrey;
+  margin-left: -1px;
+  padding-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  div.right-menu {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  div#left-menu{
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #left-menu .level-3 {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,23 @@
+common: &common
+  adapter: postgresql
+  encoding: utf8
+  pool: 25
+  username: <%= ENV.fetch("DB_USER") { 'postgres' } %>
+  password: <%= ENV.fetch("DB_PASS") { 'postgres' } %>
+  # NOTES: please change host to 'db' when using docker
+  host: <%= ENV.fetch("DB_HOST") { 'localhost' } %>
+
+development:
+  database: <%= ENV.fetch("DB_NAME") { 'react_on_rails_dev' } %>
+  min_messages: warning
+  <<: *common
+
+production:
+  database: <%= ENV.fetch("DB_NAME") { 'react_on_rails_prod' } %>
+  min_messages: warning
+  <<: *common
+
+test:
+  database: <%= ENV.fetch("DB_NAME") { 'react_on_rails_test' } %>
+  min_messages: warning
+  <<: *common

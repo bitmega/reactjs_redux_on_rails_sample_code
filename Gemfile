@@ -54,7 +54,7 @@ gem 'slim', '~> 3.0.3'
 gem 'slim-rails', '~> 3.0.1'
 gem 'js-routes', '~> 1.0.1'
 gem "i18n-js", ">= 3.0.0.rc11"
-gem 'kaminari', '~> 0.16.3'
+gem 'kaminari', '~> 1.2.1'
 
 gem 'bootstrap-datepicker-rails', '~> 1.6.4.1'
 gem 'axios_rails', '~> 0.14.0'

@@ -58,5 +58,5 @@ gem 'kaminari', '~> 0.16.3'
 
 gem 'bootstrap-datepicker-rails', '~> 1.6.4.1'
 gem 'axios_rails', '~> 0.14.0'
-gem 'gon', '~> 6.1.0'
+gem 'gon', '~> 6.4.0'
 gem 'webpacker'
